@@ -8,7 +8,7 @@ Our design requirements for an adequate decision-making process is that it clear
 Our inspiration and justification for these design goals is that they are the features of a satisfactory scientific enterprise [@spring2017why] adapted to this vulnerability management problem.
 
 To consider decisions about managing the vulnerability rather than just technical severity, one must be clear about whose decisions are involved.
-Organizations that produce patches and fix software clearly have different decisions to make than those that deploy patches or other security mitigations.
+Organizations that produce *_patches_* and *_fix_* software clearly have different decisions to make than those that deploy *_patches_* or other security *_mitigations_*.
 Furthermore, organizations in the aviation industry have different priorities than organizations that make word processors.
 These differences indicate a requirement: any formalism must be able to capture adequately the different decisions and priorities exhibited by different stakeholder groups.
 And as a usability requirement, the number of stakeholder groups needs to be small enough to be manageable, both by those issuing scores and those seeking them.
@@ -128,7 +128,7 @@ A decision tree can represent the same content in different ways.
 Since a decision tree is a representation of logical relationships between qualitative variables, the equivalent content can be represented in other formats as well.
 The R package [data.tree](https://cran.r-project.org/web/packages/data.tree/data.tree.pdf) has a variety of both internal representations and visualizations.
 
-For data input, we have elected to keep SSVC simpler than R, and just use a CSV (or other fixed-delimiter separated file) as canonical data input.
+For data input, we have elected to keep SSVC simpler than R, and just use a CSV (or other *_fixed_*-delimiter separated file) as canonical data input.
 All visualizations of a tree should be built from a canonical CSV that defines the decisions for that stakeholder.
 Examples are located in [SSVC/data](https://github.com/CERTCC/SSVC/tree/main/data).
 An interoperable CSV format is also flexible enough to support a variety of uses.
