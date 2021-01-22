@@ -293,16 +293,16 @@ Measuring attack surface precisely is difficult, and we do not propose to perfec
 Exposure should be judged against the system in its deployed context, which may differ from how it is commonly expected to be deployed.
 For example, the exposure of a device on a vehicle's CAN bus will vary depending on the presence of a cellular telemetry device on the same bus.
 
-If a vulnerability cannot be remediated, other mitigations may be used.
-Usually, the effect of these mitigations is to reduce exposure of the vulnerable component.
-Therefore, a deployer’s response to Exposure may change if such mitigations are put in place.
-If a mitigation changes exposure and thereby reduces the priority of a vulnerability, that mitigation can be considered a success.
-Whether that mitigation allows the deployer to defer further action varies according to each case.
+If a vulnerability cannot be *_remediated_*, other *_mitigations_* may be used.
+Usually, the effect of these *_mitigations_* is to reduce exposure of the vulnerable component.
+Therefore, a deployer’s response to Exposure may change if such *_mitigations_* are put in place.
+If a *_mitigation_* changes exposure and thereby reduces the priority of a vulnerability, that *_mitigation_* can be considered a success.
+Whether that *_mitigation_* allows the deployer to defer further action varies according to each case.
 
 
 
 |  | Table 9: Exposure Decision Values |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Small       | Local service or program; highly controlled network       |
-| Controlled  | Networked service with some access restrictions or mitigations already in place (whether locally or on the network). A successful mitigation must reliably interrupt the adversary’s attack, which requires the attack is detectable both reliably and quickly enough to respond. *Controlled* covers the situation in which a vulnerability can be exploited through chaining it with other vulnerabilities. The assumption is that the number of steps in the attack path is relatively low; if the path is long enough that it is implausible for an adversary to reliably execute it, then *exposure* should be *small*. |
+| Controlled  | Networked service with some access restrictions or *_mitigations_* already in place (whether locally or on the network). A successful *_mitigation_* must reliably interrupt the adversary’s attack, which requires the attack is detectable both reliably and quickly enough to respond. *Controlled* covers the situation in which a vulnerability can be exploited through chaining it with other vulnerabilities. The assumption is that the number of steps in the attack path is relatively low; if the path is long enough that it is implausible for an adversary to reliably execute it, then *exposure* should be *small*. |
 | Open | Internet or another widely accessible network where access cannot plausibly be restricted or controlled (e.g., DNS servers, web servers, VOIP servers, email servers)  |
